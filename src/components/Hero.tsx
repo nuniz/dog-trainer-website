@@ -26,7 +26,7 @@ const Hero = () => {
       <div className="absolute inset-0 z-0">
         <img
           src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?auto=format&fit=crop&w=1920&q=80"
-          alt="דני מאלף כלבים עם כלב"
+          alt="אסף מאלף כלבים עם כלב"
           className="w-full h-full object-cover"
           loading="eager"
         />
@@ -48,7 +48,7 @@ const Hero = () => {
             
             <div className="flex flex-col sm:flex-row gap-6 justify-center lg:justify-start mb-16 animate-fade-up" style={{ animationDelay: '0.4s' }}>
               <a 
-                href="https://wa.me/972501234567" 
+                href="https://wa.me/972508462906" 
                 className="btn-primary text-lg px-12 py-4"
                 target="_blank"
                 rel="noopener noreferrer"

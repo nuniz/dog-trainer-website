@@ -129,7 +129,7 @@ const Services = () => {
           </h3>
           <p className="text-xl mb-8 opacity-90">
             <a 
-              href="https://wa.me/972501234567"
+              href="https://wa.me/972508462906"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:underline"
@@ -138,14 +138,6 @@ const Services = () => {
             </a>
             {" "}ונבחר יחד את התוכנית המושלמת עבורכם
           </p>
-          <div className="flex justify-center">
-            <a 
-              href="tel:+972501234567"
-              className="btn-secondary border-white text-white hover:bg-white hover:text-primary"
-            >
-              התקשרו עכשיו
-            </a>
-          </div>
         </div>
       </div>
     </section>

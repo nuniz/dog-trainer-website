@@ -16,13 +16,13 @@ const About = () => {
           {/* Content */}
           <div className="animate-on-scroll">
             <h2 className="text-h2-mobile md:text-h2-desktop font-bold text-charcoal mb-6">
-              היכירו את דני
+              קצת עליי
               <span className="block text-primary">המאלף שלכם</span>
             </h2>
             
             <div className="prose prose-lg text-gray-700 mb-8">
               <p className="text-xl leading-relaxed mb-6">
-                שלום! אני דני, מאלף כלבים מוסמך עם למעלה מ-10 שנות ניסיון בתחום האילוף החיובי. 
+                שלום! אני אסף, מאלף כלבים מוסמך עם למעלה מ-10 שנות ניסיון בתחום האילוף החיובי. 
                 התמחותי היא ביצירת קשר חזק ובטוח בין הכלב לבעליו.
               </p>
               
@@ -70,7 +70,7 @@ const About = () => {
             <div className="relative mb-8">
               <img
                 src="/images/dog_trainer_2.jpg"
-                alt="דני המאלף עם כלב"
+                alt="אסף המאלף עם כלב"
                 className="w-full h-124 object-cover rounded-card shadow-card"
                 loading="lazy"
               />

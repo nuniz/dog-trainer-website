@@ -60,12 +60,12 @@ const Header = () => {
             <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center overflow-hidden">
               <img 
                 src="/images/profile.jpg" 
-                alt="דני - מאלף כלבים" 
+                alt="אסף - מאלף כלבים" 
                 className="w-full h-full object-cover"
               />
             </div>
             <div>
-              <h1 className="text-xl font-bold text-charcoal">דני</h1>
+              <h1 className="text-xl font-bold text-charcoal">אסף לוטנברג</h1>
               <p className="text-sm text-gray-600">מאלף כלבים מוסמך</p>
             </div>
           </div>
@@ -85,11 +85,11 @@ const Header = () => {
           {/* Social Media Links */}
           <div className="hidden md:flex items-center gap-4">
             <a
-              href=""
+              href="https://www.instagram.com/asaflotenbrg/"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 text-primary hover:text-primary/80 transition-colors"
-              aria-label="עקבו אחרינו באינסטגרם"
+              aria-label="עקבו אחרי באינסטגרם"
             >
               <Instagram size={20} />
             </a>
@@ -98,7 +98,7 @@ const Header = () => {
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 text-primary hover:text-primary/80 transition-colors"
-              aria-label="עקבו אחרינו בפייסבוק"
+              aria-label="עקבו אחרי בפייסבוק"
             >
               <Facebook size={20} />
             </a>
@@ -107,15 +107,15 @@ const Header = () => {
           {/* Quick Actions */}
           <div className="hidden md:flex items-center gap-4">
             <a
-              href="tel:+972501234567"
+              href="tel:+972508462906"
               className="flex items-center gap-2 text-primary hover:text-primary/80 transition-colors"
-              aria-label="התקשר לדני"
+              aria-label="התקשר לאסף"
             >
               <Phone size={20} />
               <span className="hidden lg:inline">050-123-4567</span>
             </a>
             <a
-              href="https://wa.me/972501234567"
+              href="https://wa.me/972508462906"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 text-primary hover:text-primary/80 transition-colors"
@@ -152,7 +152,7 @@ const Header = () => {
               ))}
               <div className="flex gap-4 pt-4 border-t border-gray-200">
                 <a
-                  href="tel:+972501234567"
+                  href="tel:+972508462906"
                   className="btn-secondary flex-1 text-center"
                   onClick={() => setIsMenuOpen(false)}
                 >

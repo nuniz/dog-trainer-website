@@ -55,7 +55,7 @@ const Index = () => {
                       </div>
                       <div>
                         <h4 className="font-medium text-charcoal">טלפון</h4>
-                        <a href="tel:+972501234567" className="text-primary hover:underline">
+                        <a href="tel:+972508462906" className="text-primary hover:underline">
                           050-123-4567
                         </a>
                       </div>
@@ -68,7 +68,7 @@ const Index = () => {
                       <div>
                         <h4 className="font-medium text-charcoal">וואטסאפ</h4>
                         <a 
-                          href="https://wa.me/972501234567" 
+                          href="https://wa.me/972508462906" 
                           target="_blank"
                           rel="noopener noreferrer"
                           className="text-primary hover:underline"
@@ -84,19 +84,9 @@ const Index = () => {
                       </div>
                       <div>
                         <h4 className="font-medium text-charcoal">אימייל</h4>
-                        <a href="mailto:info@danydogtrainer.co.il" className="text-primary hover:underline">
-                          info@danydogtrainer.co.il
+                        <a href="mailto:info@asafdogtrainer.co.il" className="text-primary hover:underline">
+                          info@asafdogtrainer.co.il
                         </a>
-                      </div>
-                    </div>
-                    
-                    <div className="flex items-center gap-4">
-                      <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
-                        <span className="text-primary">🕒</span>
-                      </div>
-                      <div>
-                        <h4 className="font-medium text-charcoal">שעות פעילות</h4>
-                        <p className="text-gray-600">ימים א׳-ו׳: 08:00-20:00<br />שבת: 09:00-14:00</p>
                       </div>
                     </div>
                   </div>
