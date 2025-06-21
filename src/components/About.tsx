@@ -5,8 +5,8 @@ const About = () => {
   const stats = [
     { icon: <Clock className="w-24 h-24" />, number: '10+', label: 'שנות ניסיון' },
     { icon: <Users className="w-24 h-24" />, number: '500+', label: 'כלבים שאולפו' },
-    { icon: <Star className="w-24 h-24" />, number: '100%', label: 'שביעות רצון' },
-    { icon: <Award className="w-24 h-24" />, number: '5', label: 'הסמכות מקצועיות' },
+    // { icon: <Star className="w-24 h-24" />, number: '100%', label: 'שביעות רצון' },
+    // { icon: <Award className="w-24 h-24" />, number: '5', label: 'הסמכות מקצועיות' },
   ];
 
   return (
@@ -60,9 +60,9 @@ const About = () => {
               </ul>
             </div>
 
-            <button className="btn-primary">
+            {/* <button className="btn-primary">
               בואו נכיר בפגישה אישית
-            </button>
+            </button> */}
           </div>
 
           {/* Image and Stats */}
