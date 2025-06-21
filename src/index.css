@@ -1,4 +1,3 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -80,11 +79,11 @@
 
 @layer components {
   .btn-primary {
-    @apply bg-primary text-primary-foreground px-8 py-4 rounded-button font-medium text-lg transition-all duration-200 hover:bg-primary/90 active:scale-97 focus:ring-2 focus:ring-accent min-h-[48px] min-w-[48px];
+    @apply bg-primary text-primary-foreground px-8 py-4 rounded-button font-medium text-lg transition-all duration-200 hover:bg-primary/90 active:scale-95 focus:ring-2 focus:ring-accent min-h-[48px] min-w-[48px];
   }
 
   .btn-secondary {
-    @apply border-2 border-primary text-primary px-8 py-4 rounded-button font-medium text-lg transition-all duration-200 hover:bg-primary hover:text-primary-foreground active:scale-97 focus:ring-2 focus:ring-accent min-h-[48px] min-w-[48px];
+    @apply border-2 border-primary text-primary px-8 py-4 rounded-button font-medium text-lg transition-all duration-200 hover:bg-primary hover:text-primary-foreground active:scale-95 focus:ring-2 focus:ring-accent min-h-[48px] min-w-[48px];
   }
 
   .card {
