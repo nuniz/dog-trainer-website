@@ -99,17 +99,6 @@ const Index = () => {
                         <p className="text-gray-600">ימים א׳-ו׳: 08:00-20:00<br />שבת: 09:00-14:00</p>
                       </div>
                     </div>
-                    
-                    <div className="pt-6 border-t border-gray-200">
-                      <a 
-                        href="https://wa.me/972501234567"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="btn-primary w-full text-center"
-                      >
-                        צרו קשר בוואטסאפ
-                      </a>
-                    </div>
                   </div>
                 </div>
               </div>
