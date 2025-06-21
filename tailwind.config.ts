@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -25,24 +26,24 @@ export default {
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
 				primary: {
-					DEFAULT: 'hsl(var(--primary))',
-					foreground: 'hsl(var(--primary-foreground))'
+					DEFAULT: '#1BA6A3',
+					foreground: '#FFFFFF'
 				},
 				secondary: {
-					DEFAULT: 'hsl(var(--secondary))',
-					foreground: 'hsl(var(--secondary-foreground))'
+					DEFAULT: '#D6BBA2',
+					foreground: '#303030'
 				},
 				destructive: {
-					DEFAULT: 'hsl(var(--destructive))',
-					foreground: 'hsl(var(--destructive-foreground))'
+					DEFAULT: '#D64545',
+					foreground: '#FFFFFF'
 				},
 				muted: {
-					DEFAULT: 'hsl(var(--muted))',
-					foreground: 'hsl(var(--muted-foreground))'
+					DEFAULT: '#F7F7F7',
+					foreground: '#303030'
 				},
 				accent: {
-					DEFAULT: 'hsl(var(--accent))',
-					foreground: 'hsl(var(--accent-foreground))'
+					DEFAULT: '#F5A623',
+					foreground: '#303030'
 				},
 				popover: {
 					DEFAULT: 'hsl(var(--popover))',
@@ -61,14 +62,55 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+				charcoal: '#303030',
+				teal: '#1BA6A3',
+				sand: '#D6BBA2',
+				'light-gray': '#F7F7F7'
+			},
+			fontFamily: {
+				heebo: ['Heebo', 'sans-serif'],
+			},
+			fontSize: {
+				'h1-desktop': ['40px', '48px'],
+				'h1-mobile': ['32px', '40px'],
+				'h2-desktop': ['32px', '40px'],
+				'h2-mobile': ['28px', '36px'],
+				'h3-desktop': ['28px', '36px'],
+				'h3-mobile': ['24px', '32px'],
+				'body': ['18px', '28px'],
+				'body-mobile': ['16px', '24px'],
+			},
+			spacing: {
+				'8': '8px',
+				'16': '16px',
+				'24': '24px',
+				'32': '32px',
+				'48': '48px',
+				'64': '64px',
 			},
 			borderRadius: {
+				'card': '16px',
+				'button': '32px',
 				lg: 'var(--radius)',
 				md: 'calc(var(--radius) - 2px)',
 				sm: 'calc(var(--radius) - 4px)'
 			},
+			boxShadow: {
+				'card': '0 2px 8px 0 rgba(0, 0, 0, 0.15)',
+				'card-hover': '0 6px 16px 0 rgba(0, 0, 0, 0.2)',
+			},
 			keyframes: {
+				'fade-up': {
+					'0%': {
+						opacity: '0',
+						transform: 'translateY(20px)'
+					},
+					'100%': {
+						opacity: '1',
+						transform: 'translateY(0)'
+					}
+				},
 				'accordion-down': {
 					from: {
 						height: '0'
@@ -87,6 +129,7 @@ export default {
 				}
 			},
 			animation: {
+				'fade-up': 'fade-up 0.6s ease-out',
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out'
 			}
