@@ -5,7 +5,7 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  base: "/dog-trainer-website-main/",
+  base: "/dog-trainer-website/",
   server: {
     host: "::",
     port: 8080,
