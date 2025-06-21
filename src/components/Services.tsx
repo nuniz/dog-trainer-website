@@ -108,7 +108,7 @@ const Services = () => {
               </div>
 
               {/* Price and Duration */}
-              <div className="flex items-center justify-between bg-sand/20 rounded-lg p-4 mb-6">
+              <div className="flex items-center justify-between bg-sand/20 rounded-lg p-4">
                 <div>
                   <div className="text-2xl font-bold text-primary">
                     {service.price}
@@ -118,9 +118,6 @@ const Services = () => {
                     {service.duration}
                   </div>
                 </div>
-                <button className="btn-primary">
-                  לפרטים נוספים
-                </button>
               </div>
             </div>
           ))}
@@ -132,12 +129,17 @@ const Services = () => {
             לא בטוחים איזה שירות מתאים לכם?
           </h3>
           <p className="text-xl mb-8 opacity-90">
-            קבעו פגישת ייעוץ חינם ונבחר יחד את התוכנית המושלמת עבורכם
+            <a 
+              href="https://wa.me/972501234567"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:underline"
+            >
+              קבעו שיחת ייעוץ חינם
+            </a>
+            {" "}ונבחר יחד את התוכנית המושלמת עבורכם
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="btn-secondary bg-white text-primary hover:bg-sand">
-              פגישת ייעוץ חינם
-            </button>
+          <div className="flex justify-center">
             <a 
               href="tel:+972501234567"
               className="btn-secondary border-white text-white hover:bg-white hover:text-primary"

@@ -48,16 +48,13 @@ const Hero = () => {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-12 animate-fade-up" style={{ animationDelay: '0.4s' }}>
-              <button className="btn-primary text-lg px-12 py-4">
-                קבעו פגישה חינם
-              </button>
               <a 
                 href="https://wa.me/972501234567" 
-                className="btn-secondary bg-white/20 backdrop-blur-sm border-white text-white hover:bg-white hover:text-charcoal"
+                className="btn-primary text-lg px-12 py-4"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                וואטסאפ
+                קבעו שיחת ייעוץ חינם
               </a>
             </div>
 

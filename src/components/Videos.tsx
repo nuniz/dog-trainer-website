@@ -1,0 +1,125 @@
+
+import React from 'react';
+import { Play, Instagram } from 'lucide-react';
+
+const Videos = () => {
+  const videos = [
+    {
+      id: 1,
+      title: 'אילוף בסיסי לגורים',
+      description: 'למידת הפקודות הבסיסיות הראשונות',
+      embedUrl: 'https://www.instagram.com/p/CExample1/embed',
+      thumbnail: 'https://images.unsplash.com/photo-1583337130417-3346a1be7dee?auto=format&fit=crop&w=400&q=80'
+    },
+    {
+      id: 2,
+      title: 'פתרון בעיות התנהגות',
+      description: 'איך להתמודד עם נביחות מוגזמת',
+      embedUrl: 'https://www.instagram.com/p/CExample2/embed',
+      thumbnail: 'https://images.unsplash.com/photo-1601758228041-f3b2795255f1?auto=format&fit=crop&w=400&q=80'
+    },
+    {
+      id: 3,
+      title: 'טיפים לאילוף מתקדם',
+      description: 'טכניקות מתקדמות לכלבים בוגרים',
+      embedUrl: 'https://www.instagram.com/p/CExample3/embed',
+      thumbnail: 'https://images.unsplash.com/photo-1587300003388-59208cc962cb?auto=format&fit=crop&w=400&q=80'
+    }
+  ];
+
+  return (
+    <section id="videos" className="py-20 bg-white">
+      <div className="container-custom">
+        <div className="text-center mb-16 animate-on-scroll">
+          <h2 className="text-h2-mobile md:text-h2-desktop font-bold text-charcoal mb-6">
+            סרטוני אילוף באינסטגרם
+          </h2>
+          <p className="text-xl text-gray-700 mb-4">
+            צפו בסרטונים שיעזרו לכם להבין טוב יותר את תהליך האילוף
+          </p>
+          <a
+            href="https://instagram.com/danydogtrainer"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 text-primary hover:text-primary/80 transition-colors font-medium"
+          >
+            <Instagram className="w-5 h-5" />
+            עקבו אחרינו באינסטגרם לעוד תכנים
+          </a>
+        </div>
+
+        <div className="grid md:grid-cols-3 gap-8">
+          {videos.map((video, index) => (
+            <div 
+              key={video.id}
+              className="card animate-on-scroll hover:shadow-card-hover transition-all duration-300"
+              style={{ animationDelay: `${index * 0.1}s` }}
+            >
+              <div className="relative mb-4 rounded-lg overflow-hidden bg-gray-100 aspect-square">
+                {/* Placeholder for Instagram embed */}
+                <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-purple-400 via-pink-500 to-red-500">
+                  <div className="text-center text-white">
+                    <Instagram className="w-12 h-12 mx-auto mb-2" />
+                    <p className="text-sm">סרטון אינסטגרם</p>
+                    <Play className="w-8 h-8 mx-auto mt-2 opacity-80" />
+                  </div>
+                </div>
+                {/* Instagram embed iframe would go here in production */}
+                {/* <iframe 
+                  src={video.embedUrl}
+                  width="100%" 
+                  height="100%"
+                  frameBorder="0"
+                  scrolling="no"
+                  allowtransparency="true"
+                  allow="encrypted-media"
+                  title={video.title}
+                  className="absolute inset-0"
+                ></iframe> */}
+              </div>
+              
+              <h3 className="text-xl font-semibold text-charcoal mb-2">
+                {video.title}
+              </h3>
+              <p className="text-gray-600 mb-4">
+                {video.description}
+              </p>
+              
+              <a
+                href="https://instagram.com/danydogtrainer"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-primary hover:text-primary/80 transition-colors font-medium"
+              >
+                <Play className="w-4 h-4" />
+                צפו בסרטון
+              </a>
+            </div>
+          ))}
+        </div>
+
+        {/* Call to Action */}
+        <div className="text-center mt-12 animate-on-scroll">
+          <div className="bg-sand/20 rounded-card p-8">
+            <h3 className="text-2xl font-semibold text-charcoal mb-4">
+              רוצים להתחיל את מסע האילוף?
+            </h3>
+            <p className="text-lg text-gray-700 mb-6">
+              קבעו שיחת ייעוץ חינם ונתחיל לעבוד יחד על שיפור התנהגות הכלב שלכם
+            </p>
+            <a 
+              href="https://wa.me/972501234567"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-primary"
+            >
+              קבעו שיחת ייעוץ חינם
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Videos;
