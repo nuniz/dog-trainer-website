@@ -28,70 +28,64 @@ const Videos = () => {
   ];
 
   return (
-    <section id="videos" className="py-24 bg-gradient-to-b from-white to-light-gray/50">
+    <section id="videos" className="py-20 bg-white">
       <div className="container-custom">
-        <div className="text-center mb-20 animate-on-scroll">
-          <div className="inline-block p-3 bg-primary/10 rounded-full mb-6">
-            <Instagram className="w-8 h-8 text-primary" />
-          </div>
-          <h2 className="text-h2-mobile md:text-h2-desktop font-bold text-charcoal mb-6 leading-tight">
+        <div className="text-center mb-16 animate-on-scroll">
+          <h2 className="text-h2-mobile md:text-h2-desktop font-bold text-charcoal mb-6">
             סרטוני אילוף באינסטגרם
           </h2>
-          <p className="text-xl text-gray-700 mb-6 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-xl text-gray-700 mb-4">
             צפו בסרטונים שיעזרו לכם להבין טוב יותר את תהליך האילוף
           </p>
-          <div className="w-24 h-1 bg-gradient-to-r from-primary to-accent mx-auto mb-8"></div>
           <a
             href="https://instagram.com/danydogtrainer"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-3 text-primary hover:text-primary/80 transition-all duration-300 font-medium text-lg bg-primary/5 px-6 py-3 rounded-full hover:bg-primary/10"
+            className="inline-flex items-center gap-2 text-primary hover:text-primary/80 transition-colors font-medium"
           >
             <Instagram className="w-5 h-5" />
             עקבו אחרינו באינסטגרם לעוד תכנים
           </a>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-3 gap-8">
           {videos.map((video, index) => (
             <div 
               key={video.id}
-              className="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 animate-on-scroll hover:-translate-y-2"
-              style={{ animationDelay: `${index * 0.15}s` }}
+              className="card animate-on-scroll hover:shadow-card-hover transition-all duration-300"
+              style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <div className="relative mb-6 overflow-hidden bg-gradient-to-br from-primary/5 to-accent/5 aspect-square">
+              <div className="relative mb-4 rounded-lg overflow-hidden bg-gray-100 aspect-square">
+                {/* Instagram embed iframe */}
                 <iframe 
                   src={video.embedUrl}
                   width="100%" 
                   height="100%"
-                  frameBorder={0}
+                  frameBorder="0"
                   scrolling="no"
-                  allowTransparency={true}
+                  allowTransparency="true"
                   allow="encrypted-media"
                   title={video.title}
-                  className="absolute inset-0 group-hover:scale-105 transition-transform duration-500"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                  className="absolute inset-0"
+                ></iframe>
               </div>
               
-              <div className="px-6 pb-6">
-                <h3 className="text-xl font-bold text-charcoal mb-3 group-hover:text-primary transition-colors duration-300">
-                  {video.title}
-                </h3>
-                <p className="text-gray-600 mb-6 leading-relaxed">
-                  {video.description}
-                </p>
-                
-                <a
-                  href="https://instagram.com/danydogtrainer"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 text-primary hover:text-primary/80 transition-all duration-300 font-semibold group-hover:gap-3"
-                >
-                  <Play className="w-4 h-4" />
-                  צפו בסרטון
-                </a>
-              </div>
+              <h3 className="text-xl font-semibold text-charcoal mb-2">
+                {video.title}
+              </h3>
+              <p className="text-gray-600 mb-4">
+                {video.description}
+              </p>
+              
+              <a
+                href="https://instagram.com/danydogtrainer"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-primary hover:text-primary/80 transition-colors font-medium"
+              >
+                <Play className="w-4 h-4" />
+                צפו בסרטון
+              </a>
             </div>
           ))}
         </div>

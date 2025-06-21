@@ -64,19 +64,7 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				},
 				charcoal: '#303030',
-				teal: {
-					DEFAULT: '#1BA6A3',
-					50: '#f0fdfc',
-					100: '#ccfbf1',
-					200: '#99f6e4',
-					300: '#5eead4',
-					400: '#2dd4bf',
-					500: '#14b8a6',
-					600: '#0d9488',
-					700: '#0f766e',
-					800: '#115e59',
-					900: '#134e4a'
-				},
+				teal: '#1BA6A3',
 				sand: '#D6BBA2',
 				'light-gray': '#F7F7F7'
 			},
