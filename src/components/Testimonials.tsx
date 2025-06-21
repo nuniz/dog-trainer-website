@@ -57,7 +57,7 @@ const Testimonials = () => {
       <div className="container-custom">
         <div className="text-center mb-16 animate-on-scroll">
           <h2 className="text-h2-mobile md:text-h2-desktop font-bold text-charcoal mb-6">
-            מה הלקוחות שלנו אומרים
+            מה הלקוחות שלי אומרים
           </h2>
           <p className="text-xl text-gray-700 max-w-3xl mx-auto">
             מאות בעלי כלבים כבר חוו את השינוי החיובי. 

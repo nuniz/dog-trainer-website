@@ -5,23 +5,23 @@ const Hero = () => {
   const benefits = [
     {
       icon: <Heart className="w-24 h-24 text-primary" />,
-      title: 'גישה חיובית',
-      description: 'אילוף מבוסס על חיזוק חיובי ללא אלימות'
+      title: 'גישה משולבת ומקצועית',
+      description: 'מעל 10 שנות ניסיון באילוף, בגישה המשלבת חיזוקים חיוביים עם כלים לבניית קשר ותקשורת ברורה.'
     },
     {
       icon: <Target className="w-24 h-24 text-primary" />,
-      title: 'תכנית מותאמת',
-      description: 'תוכנית אילוף אישית לכל כלב ובעליו'
+      title: 'התמחות בבעיות מורכבות',
+      description: 'פתרונות מוכחים לטיפול ברכושנות, תוקפנות, חרדת נטישה ועוד, עם דגש על תוכנית אישית.'
     },
     {
       icon: <CheckCircle className="w-24 h-24 text-primary" />,
-      title: 'תוצאות מדידות',
-      description: 'שיפור ניכר ומדיד בהתנהגות הכלב'
+      title: 'תוצאות מעשיות ומוכחות',
+      description: 'ידע תחרותי מעמיק (BH, IGP) שמתורגם לכלים לבניית ציות, שליטה וחיים מאוזנים יותר לכלבכם.'
     }
   ];
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center bg-gradient-to-bl from-light-gray to-sand/30 pt-20 md:pt-24 scroll-offset">
+    <section id="home" className="relative min-h-screen flex items-center bg-gradient-to-bl from-light-gray to-sand/30 pt-20 md:pt-24 scroll-offset overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img
@@ -30,26 +30,26 @@ const Hero = () => {
           className="w-full h-full object-cover"
           loading="eager"
         />
-        <div className="absolute inset-0 bg-black/30"></div>
+        <div className="absolute inset-0 bg-black/40"></div>
       </div>
 
-      <div className="container-custom relative z-10">
+      <div className="container-custom relative z-10 py-16 md:py-24 lg:py-32">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Content */}
-          <div className="text-center lg:text-right">
-            <h1 className="text-h1-mobile md:text-h1-desktop font-bold text-white mb-8 animate-fade-up">
+          <div className="text-center lg:text-right px-4 sm:px-0">
+            <h1 className="text-h1-mobile md:text-h1-desktop font-extrabold text-white mb-6 leading-tight animate-fade-up">
               אילוף כלבים
               <span className="block text-accent mt-2">בהתאמה אישית</span>
             </h1>
-            <p className="text-xl md:text-2xl text-white/90 mb-10 leading-relaxed animate-fade-up" style={{ animationDelay: '0.2s' }}>
-              מאלף מוסמך עם ניסיון של למעלה מ-10 שנים. 
-              גישה חיובית ומקצועית לאילוף כלבים מכל הגילאים והגזעים.
+            <p className="text-xl md:text-2xl text-white/90 mb-8 leading-relaxed max-w-2xl mx-auto lg:mx-0 animate-fade-up" style={{ animationDelay: '0.2s' }}>
+              מאלף מוסמך עם ניסיון של למעלה מ-<span className="font-bold">10 שנים</span>.
+              <span className="block mt-2">גישה חיובית ומקצועית לאילוף כלבים מכל הגילאים והגזעים.</span>
             </p>
-            
-            <div className="flex flex-col sm:flex-row gap-6 justify-center lg:justify-start mb-16 animate-fade-up" style={{ animationDelay: '0.4s' }}>
-              <a 
-                href="https://wa.me/972508462906" 
-                className="btn-primary text-lg px-12 py-4"
+
+            <div className="flex flex-col sm:flex-row gap-6 justify-center lg:justify-start mb-12 animate-fade-up" style={{ animationDelay: '0.4s' }}>
+              <a
+                href="https://wa.me/972508462906"
+                className="btn-primary text-lg px-12 py-4 shadow-xl hover:shadow-2xl transition-shadow"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -76,9 +76,9 @@ const Hero = () => {
         </div>
 
         {/* Benefits Cards */}
-        <div className="grid md:grid-cols-3 gap-8 mt-20 animate-fade-up" style={{ animationDelay: '0.8s' }}>
+        <div className="grid md:grid-cols-3 gap-8 mt-20 animate-fade-up px-4 sm:px-0" style={{ animationDelay: '0.8s' }}>
           {benefits.map((benefit, index) => (
-            <div key={index} className="card bg-white/95 backdrop-blur-sm text-center p-8">
+            <div key={index} className="card bg-white/95 backdrop-blur-sm text-center p-8 rounded-xl shadow-lg">
               <div className="flex justify-center mb-6">
                 {benefit.icon}
               </div>

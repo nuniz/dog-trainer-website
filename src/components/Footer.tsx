@@ -120,18 +120,6 @@ const Footer = () => {
                 <span>אזור המרכז, ישראל<br />שירות עד הבית</span>
               </div>
             </div>
-
-            {/* Quick Actions */}
-            <div className="mt-6">
-              <a 
-                href="https://wa.me/972508462906"
-                className="btn-secondary w-full text-center block border-primary text-primary hover:bg-primary hover:text-white"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                וואטסאפ
-              </a>
-            </div>
           </div>
         </div>
 
