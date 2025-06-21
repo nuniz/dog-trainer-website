@@ -56,26 +56,18 @@ const Videos = () => {
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <div className="relative mb-4 rounded-lg overflow-hidden bg-gray-100 aspect-square">
-                {/* Placeholder for Instagram embed */}
-                <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-purple-400 via-pink-500 to-red-500">
-                  <div className="text-center text-white">
-                    <Instagram className="w-12 h-12 mx-auto mb-2" />
-                    <p className="text-sm">סרטון אינסטגרם</p>
-                    <Play className="w-8 h-8 mx-auto mt-2 opacity-80" />
-                  </div>
-                </div>
-                {/* Instagram embed iframe would go here in production */}
-                {/* <iframe 
+                {/* Instagram embed iframe */}
+                <iframe 
                   src={video.embedUrl}
                   width="100%" 
                   height="100%"
                   frameBorder="0"
                   scrolling="no"
-                  allowtransparency="true"
+                  allowTransparency="true"
                   allow="encrypted-media"
                   title={video.title}
                   className="absolute inset-0"
-                ></iframe> */}
+                ></iframe>
               </div>
               
               <h3 className="text-xl font-semibold text-charcoal mb-2">
@@ -96,26 +88,6 @@ const Videos = () => {
               </a>
             </div>
           ))}
-        </div>
-
-        {/* Call to Action */}
-        <div className="text-center mt-12 animate-on-scroll">
-          <div className="bg-sand/20 rounded-card p-8">
-            <h3 className="text-2xl font-semibold text-charcoal mb-4">
-              רוצים להתחיל את מסע האילוף?
-            </h3>
-            <p className="text-lg text-gray-700 mb-6">
-              קבעו שיחת ייעוץ חינם ונתחיל לעבוד יחד על שיפור התנהגות הכלב שלכם
-            </p>
-            <a 
-              href="https://wa.me/972501234567"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn-primary"
-            >
-              קבעו שיחת ייעוץ חינם
-            </a>
-          </div>
         </div>
       </div>
     </section>

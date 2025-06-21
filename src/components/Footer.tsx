@@ -38,16 +38,20 @@ const Footer = () => {
             </p>
             <div className="flex gap-4">
               <a 
-                href="#" 
+                href="https://www.facebook.com/danydogtrainer" 
                 className="w-10 h-10 bg-primary/20 rounded-full flex items-center justify-center hover:bg-primary transition-colors"
                 aria-label="פייסבוק"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <Facebook size={20} />
               </a>
               <a 
-                href="#" 
+                href="https://www.instagram.com/danydogtrainer" 
                 className="w-10 h-10 bg-primary/20 rounded-full flex items-center justify-center hover:bg-primary transition-colors"
                 aria-label="אינסטגרם"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <Instagram size={20} />
               </a>
@@ -117,10 +121,7 @@ const Footer = () => {
             </div>
 
             {/* Quick Actions */}
-            <div className="mt-6 space-y-3">
-              <button className="btn-primary w-full">
-                קבעו פגישה
-              </button>
+            <div className="mt-6">
               <a 
                 href="https://wa.me/972501234567"
                 className="btn-secondary w-full text-center block border-primary text-primary hover:bg-primary hover:text-white"

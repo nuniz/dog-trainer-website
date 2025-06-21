@@ -1,6 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Phone, MessageCircle } from 'lucide-react';
+import { Menu, X, Phone, MessageCircle, Instagram, Facebook } from 'lucide-react';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -21,7 +21,6 @@ const Header = () => {
     { href: '#services', label: 'שירותים' },
     { href: '#videos', label: 'סרטונים' },
     { href: '#testimonials', label: 'המלצות' },
-    { href: '#tips', label: 'טיפים' },
     { href: '#contact', label: 'צור קשר' },
   ];
 
@@ -33,6 +32,28 @@ const Header = () => {
     >
       <nav className="container-custom">
         <div className="flex items-center justify-between py-4">
+          {/* Social Media Links */}
+          <div className="hidden md:flex items-center gap-4">
+            <a
+              href="https://www.instagram.com/danydogtrainer"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 text-primary hover:text-primary/80 transition-colors"
+              aria-label="עקבו אחרינו באינסטגרם"
+            >
+              <Instagram size={20} />
+            </a>
+            <a
+              href="https://www.facebook.com/danydogtrainer"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 text-primary hover:text-primary/80 transition-colors"
+              aria-label="עקבו אחרינו בפייסבוק"
+            >
+              <Facebook size={20} />
+            </a>
+          </div>
+
           {/* Logo */}
           <div className="flex items-center gap-3">
             <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center">
@@ -77,9 +98,6 @@ const Header = () => {
               <MessageCircle size={20} />
               <span className="hidden lg:inline">וואטסאפ</span>
             </a>
-            <button className="btn-primary">
-              קבעו פגישה
-            </button>
           </div>
 
           {/* Mobile menu button */}
@@ -113,9 +131,24 @@ const Header = () => {
                 >
                   התקשר
                 </a>
-                <button className="btn-primary flex-1">
-                  קבעו פגישה
-                </button>
+                <div className="flex gap-2">
+                  <a
+                    href="https://www.instagram.com/danydogtrainer"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="p-2 text-primary hover:text-primary/80 transition-colors"
+                  >
+                    <Instagram size={20} />
+                  </a>
+                  <a
+                    href="https://www.facebook.com/danydogtrainer"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="p-2 text-primary hover:text-primary/80 transition-colors"
+                  >
+                    <Facebook size={20} />
+                  </a>
+                </div>
               </div>
             </div>
           </div>

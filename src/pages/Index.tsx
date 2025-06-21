@@ -43,64 +43,11 @@ const Index = () => {
         
         <section id="contact" className="py-20 bg-light-gray">
           <div className="container-custom">
-            <div className="grid lg:grid-cols-2 gap-16">
-              <div>
-                <h2 className="text-h2-mobile md:text-h2-desktop font-bold text-charcoal mb-6">
-                  צרו קשר
-                </h2>
-                <p className="text-xl text-gray-700 mb-8">
-                  מוזמנים לפנות אלינו לכל שאלה או לתיאום פגישה
-                </p>
-                
-                {/* Contact Form */}
-                <div className="bg-white rounded-card p-8">
-                  <div className="space-y-6">
-                    <div className="form-group">
-                      <input 
-                        type="text" 
-                        className="form-input" 
-                        placeholder="השם שלכם"
-                        id="name"
-                      />
-                      <label htmlFor="name" className="form-label">השם שלכם</label>
-                    </div>
-                    <div className="form-group">
-                      <input 
-                        type="email" 
-                        className="form-input" 
-                        placeholder="כתובת אימייל"
-                        id="email"
-                      />
-                      <label htmlFor="email" className="form-label">כתובת אימייל</label>
-                    </div>
-                    <div className="form-group">
-                      <input 
-                        type="tel" 
-                        className="form-input" 
-                        placeholder="מספר טלפון"
-                        id="phone"
-                      />
-                      <label htmlFor="phone" className="form-label">מספר טלפון</label>
-                    </div>
-                    <div className="form-group">
-                      <textarea 
-                        className="form-input min-h-[120px] resize-none" 
-                        placeholder="הודעה"
-                        id="message"
-                      ></textarea>
-                      <label htmlFor="message" className="form-label">הודעה</label>
-                    </div>
-                    <button className="btn-primary w-full">
-                      שלחו הודעה
-                    </button>
-                  </div>
-                </div>
-              </div>
-
-              <div>
+            <div className="flex justify-center">
+              <div className="max-w-md w-full">
                 {/* Enhanced Contact Info */}
                 <div className="bg-white rounded-card p-8 h-full">
-                  <h3 className="text-2xl font-semibold mb-6 text-charcoal">פרטי קשר</h3>
+                  <h3 className="text-2xl font-semibold mb-6 text-charcoal text-center">פרטי קשר</h3>
                   
                   <div className="space-y-6">
                     <div className="flex items-center gap-4">
@@ -161,7 +108,7 @@ const Index = () => {
                         rel="noopener noreferrer"
                         className="btn-primary w-full text-center"
                       >
-                        קבעו שיחת ייעוץ חינם
+                        צרו קשר בוואטסאפ
                       </a>
                     </div>
                   </div>
