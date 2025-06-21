@@ -74,7 +74,7 @@ const About = () => {
           <div className="animate-on-scroll mt-12 lg:mt-0 lg:ml-12">
             <div className="relative mb-8">
               <img
-                src="/images/dog_trainer_2.jpg"
+                src="/dog-trainer-website/images/dog_trainer_2.jpg"
                 alt="אסף המאלף עם כלב"
                 className="w-full h-[400px] md:h-[500px] object-cover rounded-3xl shadow-2xl border-4 border-white"
                 loading="lazy"

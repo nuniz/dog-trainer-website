@@ -74,7 +74,7 @@ const Header = () => {
           <div className="flex items-center gap-3">
             <div className="w-14 h-14 bg-primary rounded-full flex items-center justify-center overflow-hidden shadow-md flex-shrink-0">
               <img
-                src="/images/profile.jpg"
+                src="/dog-trainer-website/images/profile.jpg"
                 alt="אסף - מאלף כלבים"
                 className="w-full h-full object-cover"
                 loading="lazy"
