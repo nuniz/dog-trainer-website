@@ -1,17 +1,16 @@
-
 import React from 'react';
 import { Award, Users, Clock, Star } from 'lucide-react';
 
 const About = () => {
   const stats = [
-    { icon: <Clock className="w-8 h-8" />, number: '10+', label: 'שנות ניסיון' },
-    { icon: <Users className="w-8 h-8" />, number: '500+', label: 'כלבים שאולפו' },
-    { icon: <Star className="w-8 h-8" />, number: '100%', label: 'שביעות רצון' },
-    { icon: <Award className="w-8 h-8" />, number: '5', label: 'הסמכות מקצועיות' },
+    { icon: <Clock className="w-24 h-24" />, number: '10+', label: 'שנות ניסיון' },
+    { icon: <Users className="w-24 h-24" />, number: '500+', label: 'כלבים שאולפו' },
+    { icon: <Star className="w-24 h-24" />, number: '100%', label: 'שביעות רצון' },
+    { icon: <Award className="w-24 h-24" />, number: '5', label: 'הסמכות מקצועיות' },
   ];
 
   return (
-    <section id="about" className="py-20 bg-white">
+    <section id="about" className="py-20 bg-white scroll-offset">
       <div className="container-custom">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Content */}
@@ -70,9 +69,9 @@ const About = () => {
           <div className="animate-on-scroll">
             <div className="relative mb-8">
               <img
-                src="https://images.unsplash.com/photo-1507146426996-ef05306b995a?auto=format&fit=crop&w=800&q=80"
+                src="/images/dog_trainer_2.jpg"
                 alt="דני המאלף עם כלב"
-                className="w-full h-96 object-cover rounded-card shadow-card"
+                className="w-full h-124 object-cover rounded-card shadow-card"
                 loading="lazy"
               />
               <div className="absolute -bottom-4 -left-4 bg-white p-4 rounded-lg shadow-card">

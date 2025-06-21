@@ -96,6 +96,7 @@
 
   .container-custom {
     @apply max-w-7xl mx-auto section-padding;
+    margin-bottom: 20px;
   }
 
   /* RTL-specific utilities */
@@ -131,6 +132,26 @@
   .animate-on-scroll.visible {
     opacity: 1;
     transform: translateY(0);
+  }
+
+  /* Header spacing utilities */
+  .header-spacing {
+    @apply pt-20 md:pt-24;
+  }
+
+  .header-spacing-sm {
+    @apply pt-16 md:pt-20;
+  }
+
+  /* Scroll offset for fixed header */
+  .scroll-offset {
+    scroll-margin-top: 5rem; /* 80px for mobile */
+  }
+
+  @media (min-width: 768px) {
+    .scroll-offset {
+      scroll-margin-top: 6rem; /* 96px for desktop */
+    }
   }
 }
 

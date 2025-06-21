@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { Menu, X, Phone, MessageCircle, Instagram, Facebook } from 'lucide-react';
 
@@ -14,6 +13,29 @@ const Header = () => {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  // Close mobile menu when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      const target = event.target as Element;
+      if (isMenuOpen && !target.closest('header')) {
+        setIsMenuOpen(false);
+      }
+    };
+
+    if (isMenuOpen) {
+      document.addEventListener('click', handleClickOutside);
+      // Prevent body scroll when mobile menu is open
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+
+    return () => {
+      document.removeEventListener('click', handleClickOutside);
+      document.body.style.overflow = 'unset';
+    };
+  }, [isMenuOpen]);
 
   const navigationItems = [
     { href: '#home', label: 'דף הבית' },
@@ -32,10 +54,38 @@ const Header = () => {
     >
       <nav className="container-custom">
         <div className="flex items-center justify-between py-4">
+
+          {/* Logo */}
+          <div className="flex items-center gap-3">
+            <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center overflow-hidden">
+              <img 
+                src="/images/profile.jpg" 
+                alt="דני - מאלף כלבים" 
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <div>
+              <h1 className="text-xl font-bold text-charcoal">דני</h1>
+              <p className="text-sm text-gray-600">מאלף כלבים מוסמך</p>
+            </div>
+          </div>
+          {/* Desktop Navigation */}
+          <div className="hidden lg:flex items-center gap-8">
+            {navigationItems.map((item) => (
+              <a
+                key={item.href}
+                href={item.href}
+                className="text-charcoal hover:text-primary transition-colors duration-200 font-medium"
+              >
+                {item.label}
+              </a>
+            ))}
+          </div>
+
           {/* Social Media Links */}
           <div className="hidden md:flex items-center gap-4">
             <a
-              href="https://www.instagram.com/danydogtrainer"
+              href=""
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 text-primary hover:text-primary/80 transition-colors"
@@ -52,30 +102,6 @@ const Header = () => {
             >
               <Facebook size={20} />
             </a>
-          </div>
-
-          {/* Logo */}
-          <div className="flex items-center gap-3">
-            <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center">
-              <span className="text-white font-bold text-xl">ד</span>
-            </div>
-            <div>
-              <h1 className="text-xl font-bold text-charcoal">דני</h1>
-              <p className="text-sm text-gray-600">מאלף כלבים מוסמך</p>
-            </div>
-          </div>
-
-          {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-center gap-8">
-            {navigationItems.map((item) => (
-              <a
-                key={item.href}
-                href={item.href}
-                className="text-charcoal hover:text-primary transition-colors duration-200 font-medium"
-              >
-                {item.label}
-              </a>
-            ))}
           </div>
 
           {/* Quick Actions */}
@@ -112,7 +138,7 @@ const Header = () => {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="lg:hidden bg-white border-t border-gray-200 py-4">
+          <div className="lg:hidden bg-white border-t border-gray-200 py-4 max-h-[calc(100vh-80px)] overflow-y-auto">
             <div className="flex flex-col gap-4">
               {navigationItems.map((item) => (
                 <a
@@ -128,12 +154,13 @@ const Header = () => {
                 <a
                   href="tel:+972501234567"
                   className="btn-secondary flex-1 text-center"
+                  onClick={() => setIsMenuOpen(false)}
                 >
                   התקשר
                 </a>
                 <div className="flex gap-2">
                   <a
-                    href="https://www.instagram.com/danydogtrainer"
+                    href="https://www.instagram.com/asaflotenbrg"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="p-2 text-primary hover:text-primary/80 transition-colors"

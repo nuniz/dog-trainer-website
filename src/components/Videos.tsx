@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Play, Instagram } from 'lucide-react';
 
@@ -8,27 +7,27 @@ const Videos = () => {
       id: 1,
       title: 'אילוף בסיסי לגורים',
       description: 'למידת הפקודות הבסיסיות הראשונות',
-      embedUrl: 'https://www.instagram.com/p/CExample1/embed',
+      embedUrl: 'https://www.instagram.com/p/Ct9B-fGgyKR/embed?autoplay=1',
       thumbnail: 'https://images.unsplash.com/photo-1583337130417-3346a1be7dee?auto=format&fit=crop&w=400&q=80'
     },
     {
       id: 2,
       title: 'פתרון בעיות התנהגות',
       description: 'איך להתמודד עם נביחות מוגזמת',
-      embedUrl: 'https://www.instagram.com/p/CExample2/embed',
+      embedUrl: 'https://www.instagram.com/p/Cuoe0uUghpz/embed?autoplay=1',
       thumbnail: 'https://images.unsplash.com/photo-1601758228041-f3b2795255f1?auto=format&fit=crop&w=400&q=80'
     },
     {
       id: 3,
       title: 'טיפים לאילוף מתקדם',
       description: 'טכניקות מתקדמות לכלבים בוגרים',
-      embedUrl: 'https://www.instagram.com/p/CExample3/embed',
+      embedUrl: 'https://www.instagram.com/p/CrYpqIsAsBD/embed?autoplay=1',
       thumbnail: 'https://images.unsplash.com/photo-1587300003388-59208cc962cb?auto=format&fit=crop&w=400&q=80'
     }
   ];
 
   return (
-    <section id="videos" className="py-20 bg-white">
+    <section id="videos" className="py-20 bg-white scroll-offset">
       <div className="container-custom">
         <div className="text-center mb-16 animate-on-scroll">
           <h2 className="text-h2-mobile md:text-h2-desktop font-bold text-charcoal mb-6">
@@ -63,7 +62,7 @@ const Videos = () => {
                   height="100%"
                   frameBorder="0"
                   scrolling="no"
-                  allowTransparency="true"
+                  allowTransparency={true}
                   allow="encrypted-media"
                   title={video.title}
                   className="absolute inset-0"
@@ -83,8 +82,6 @@ const Videos = () => {
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 text-primary hover:text-primary/80 transition-colors font-medium"
               >
-                <Play className="w-4 h-4" />
-                צפו בסרטון
               </a>
             </div>
           ))}

@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Star, Quote } from 'lucide-react';
 
@@ -54,7 +53,7 @@ const Testimonials = () => {
   };
 
   return (
-    <section id="testimonials" className="py-20 bg-light-gray">
+    <section id="testimonials" className="py-20 bg-light-gray scroll-offset">
       <div className="container-custom">
         <div className="text-center mb-16 animate-on-scroll">
           <h2 className="text-h2-mobile md:text-h2-desktop font-bold text-charcoal mb-6">
@@ -97,7 +96,7 @@ const Testimonials = () => {
               </div>
               
               <div className="relative">
-                <Quote className="absolute -top-2 -right-2 w-8 h-8 text-sand opacity-50" />
+                <Quote className="absolute -top-2 -right-2 w-24 h-24 text-sand opacity-50" />
                 <p className="text-gray-700 leading-relaxed text-lg italic">
                   "{testimonial.text}"
                 </p>

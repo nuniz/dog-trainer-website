@@ -1,4 +1,3 @@
-
 import React, { useEffect } from 'react';
 import Header from '../components/Header';
 import Hero from '../components/Hero';
@@ -32,7 +31,7 @@ const Index = () => {
   }, []);
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen pt-20 md:pt-24">
       <Header />
       <main>
         <Hero />
@@ -41,7 +40,7 @@ const Index = () => {
         <Videos />
         <Testimonials />
         
-        <section id="contact" className="py-20 bg-light-gray">
+        <section id="contact" className="py-20 bg-light-gray scroll-offset">
           <div className="container-custom">
             <div className="flex justify-center">
               <div className="max-w-md w-full">

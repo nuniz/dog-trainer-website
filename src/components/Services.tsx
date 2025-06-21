@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Baby, Dog, Home, Users, Clock, CheckCircle } from 'lucide-react';
 
@@ -59,7 +58,7 @@ const Services = () => {
   ];
 
   return (
-    <section id="services" className="py-20 bg-light-gray">
+    <section id="services" className="py-20 bg-light-gray scroll-offset">
       <div className="container-custom">
         {/* Header */}
         <div className="text-center mb-16 animate-on-scroll">

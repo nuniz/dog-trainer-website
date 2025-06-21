@@ -47,7 +47,7 @@ const Footer = () => {
                 <Facebook size={20} />
               </a>
               <a 
-                href="https://www.instagram.com/danydogtrainer" 
+                href="https://www.instagram.com/asaflotenbrg" 
                 className="w-10 h-10 bg-primary/20 rounded-full flex items-center justify-center hover:bg-primary transition-colors"
                 aria-label="אינסטגרם"
                 target="_blank"
