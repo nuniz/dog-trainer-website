@@ -4,7 +4,7 @@ import { Award, Users, Clock, Star, Phone, MessageCircle, Bone, Smile } from 'lu
 const About = () => {
   // We'll keep only 'שנות ניסיון' in the stats array for the floating box
   const stats = [
-    { icon: <Clock className="w-12 h-12 text-primary" />, number: '10+', label: 'שנות ניסיון' },
+    { icon: <Clock className="w-12 h-12 text-primary" />, number: '5+', label: 'שנות ניסיון' },
     // Removed the other stats as they will be represented differently or textually
   ];
 
@@ -27,7 +27,7 @@ const About = () => {
             <div className="text-gray-700 space-y-6 mb-8">
               <p className="text-xl leading-relaxed">
                 שלום לכם, אני אסף לוטנברג, מאלף כלבים מוסמך עם למעלה מ-<span className="font-bold text-charcoal">10 שנות ניסיון</span> בתחום.
-                במהלך השנים <span className="font-bold text-charcoal">אילפתי מעל 500 כלבים</span> והענקתי ל<span className="font-bold text-charcoal">מאות משפחות מרוצות</span> כלים לבניית קשר חזק ובטוח עם חברם הטוב ביותר.
+                במהלך השנים <span className="font-bold text-charcoal">אילפתי מעל 300 כלבים</span> והענקתי ל<span className="font-bold text-charcoal">מאות משפחות מרוצות</span> כלים לבניית קשר חזק ובטוח עם חברם הטוב ביותר.
                 אני מאמין ב<span className="font-bold text-charcoal">גישה משולבת</span> וייחודית, ששואבת את הטוב ביותר משיטות אילוף שונות –
                 מ<span className="font-bold text-charcoal">אילוף חיובי מבוסס חיזוקים</span> ועד לגישות המלמדות שליטה, משמעת ותקשורת ברורה.
                 המסע שלי עם כלבים התפתח לתשוקה אמיתית לבניית קשר חזק, בטוח ומאוזן בין כלבים לבעליהם.
@@ -42,7 +42,7 @@ const About = () => {
 
               <p className="text-lg leading-relaxed">
                 מעבר לאילוף בסיסי ופתרון בעיות, אני עוסק גם ב<span className="font-bold text-charcoal">אילוף מתקדם</span> ומתחרה באופן פעיל
-                ב<span className="font-bold text-charcoal">תחרויות כלבים (BH test ו-IGP 1)</span> עם פולה.
+                ב<span className="font-bold text-charcoal">תחרויות כלבים (BH test ו-IGP)</span> עם פולה.
                 הידע והניסיון המעשי שלי מאפשרים לי להעניק לכם כלים לא רק לאילוף,
                 אלא גם להבנה עמוקה יותר של כלבכם, חיזוק הקשר שלכם ויצירת חיים משותפים מאושרים ומאוזנים.
                 <span className="block mt-4 text-primary font-bold">בואו נבנה יחד את הדרך הנכונה לכלב שלכם!</span>
@@ -97,15 +97,11 @@ const About = () => {
               <ul className="space-y-4 text-lg">
                 <li className="flex items-start gap-4">
                   <Award className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
-                  <span>מאלף כלבים מוסמך מטעם <span className="font-bold text-charcoal">האגודה הישראלית למאלפי כלבים.</span></span>
-                </li>
-                <li className="flex items-start gap-4">
-                  <Award className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
                   <span>הכשרה מתמשכת ולימוד שיטות אילוף חדשניות ומוכחות.</span>
                 </li>
                 <li className="flex items-start gap-4">
                   <Bone className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
-                  <span><span className="font-bold text-charcoal">מתחרה פעיל בתחרויות כלבים (BH test, IGP 1)</span> עם הכלבה פולה.</span>
+                  <span><span className="font-bold text-charcoal">מתחרה פעיל בתחרויות כלבים (BH test, IGP)</span> עם הכלבה פולה.</span>
                 </li>
               </ul>
             </div>

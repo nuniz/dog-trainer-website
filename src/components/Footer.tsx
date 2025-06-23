@@ -34,7 +34,7 @@ const Footer = () => {
               </div>
             </div>
             <p className="text-gray-300 mb-6 leading-relaxed">
-              מאלף כלבים מוסמך עם למעלה מ-10 שנות ניסיון. 
+              מאלף כלבים מוסמך עם למעלה מ-5 שנות ניסיון. 
               מתמחה באילוף ביתי ופתרון בעיות התנהגות.
             </p>
             <div className="flex gap-4">
@@ -109,11 +109,11 @@ const Footer = () => {
                 <span>050-846-2906</span>
               </a>
               <a 
-                href="mailto:dani@dogtraining.co.il"
+                href="mailto:lotenbergasaf@gmail.com"
                 className="flex items-center gap-3 text-gray-300 hover:text-primary transition-colors"
               >
                 <Mail size={18} />
-                <span>info@asafdogtrainer.co.il</span>
+                <span>lotenbergasaf@gmail.com</span>
               </a>
               <div className="flex items-start gap-3 text-gray-300">
                 <MapPin size={18} className="mt-1 flex-shrink-0" />

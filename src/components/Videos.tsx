@@ -19,14 +19,14 @@ const Videos = () => {
     {
       id: 2,
       title: 'פתרון בעיות התנהגות נפוצות',
-      description: 'הבנה וטיפול בנביחות מוגזמות, חפירות והרס בבית.',
+      description: 'למידת פריקת אנרגיה נכונה, ובכך למנוע בעיות התנהגות של הרס הבית והשמדת רהיטים.',
       embedUrl: 'https://www.instagram.com/p/Cuoe0uUghpz/embed',
     },
     {
       id: 3,
       title: 'טיפים לאילוף מתקדם לכלבים בוגרים',
       description: 'למדו טכניקות מורכבות יותר וכיצד לשפר את הקשר עם כלבכם.',
-      embedUrl: 'https://www.instagram.com/p/CrYpqIsAsBD/embed',
+      embedUrl: 'https://www.instagram.com/p/Ct9B-fGgyKR/embed',
     },
     // {
     //     id: 4,
