@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Phone, Mail, MapPin, MessageCircle, Facebook, Instagram } from 'lucide-react';
 
@@ -14,8 +13,7 @@ const Footer = () => {
     'אילוף בבית',
     'אילוף קבוצתי',
     'אילוף גורים',
-    'חרדת נטישה',
-    'רכושנות'
+    'אילוף מתקדם'
   ];
 
   return (
@@ -25,8 +23,13 @@ const Footer = () => {
           {/* Company Info */}
           <div>
             <div className="flex items-center gap-3 mb-6">
-              <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center">
-                <span className="text-white font-bold text-xl">ד</span>
+              {/* Replace the <span> with an <img> tag */}
+              <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center overflow-hidden">
+                <img
+                  src="/dog-trainer-website/images/profile.jpg"
+                  alt="Company Logo" // Important for accessibility
+                  className="w-full h-full object-cover" // Style the image to fit
+                />
               </div>
               <div>
                 <h3 className="text-xl font-bold">אסף לוטנברג</h3>
