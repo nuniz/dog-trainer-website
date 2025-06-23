@@ -85,15 +85,6 @@ const Videos = () => {
                 <p className="text-gray-700 text-base mb-4">
                   {video.description}
                 </p>
-                {/* Optionally add a link to the original Instagram post if desired */}
-                <a
-                  href={`https://www.instagram.com/p/${video.embedUrl.split('/').slice(-2, -1)[0]}/`} // Extracts post ID
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1 text-primary-light hover:text-primary transition-colors font-medium text-sm"
-                >
-                  <Instagram className="w-4 h-4" />
-                </a>
               </div>
             </div>
           ))}
