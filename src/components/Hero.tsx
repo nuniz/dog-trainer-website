@@ -42,7 +42,7 @@ const Hero = () => {
               <span className="block text-accent mt-2">בהתאמה אישית</span>
             </h1>
             <p className="text-xl md:text-2xl text-white/90 mb-8 leading-relaxed max-w-2xl mx-auto lg:mx-0 animate-fade-up" style={{ animationDelay: '0.2s' }}>
-              מאלף מוסמך עם ניסיון של למעלה מ-<span className="font-bold">10 שנים</span>.
+              מאלף מוסמך עם ניסיון של למעלה מ-<span className="font-bold">5 שנים</span>.
               <span className="block mt-2">גישה חיובית ומקצועית לאילוף כלבים מכל הגילאים והגזעים.</span>
             </p>
 
@@ -65,7 +65,7 @@ const Hero = () => {
               </div>
               <div className="flex items-center gap-3">
                 <CheckCircle className="w-5 h-5 text-accent" />
-                <span>+10 שנות ניסיון</span>
+                <span>+5 שנות ניסיון</span>
               </div>
               <div className="flex items-center gap-3">
                 <CheckCircle className="w-5 h-5 text-accent" />
