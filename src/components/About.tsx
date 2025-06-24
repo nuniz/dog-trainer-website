@@ -82,7 +82,7 @@ const About = () => {
               {/* Floating Stat Box - Years of Experience */}
               <div className="absolute -bottom-8 -left-8 bg-primary text-white p-6 rounded-xl shadow-xl transform rotate-3 hover:rotate-0 transition-transform duration-300 border-4 border-white">
                 <div className="text-center">
-                  <div className="text-4xl font-extrabold mb-1">10+</div>
+                  <div className="text-4xl font-extrabold mb-1">5+</div>
                   <div className="text-lg opacity-90">שנות ניסיון</div>
                 </div>
               </div>
