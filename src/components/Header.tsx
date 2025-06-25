@@ -66,9 +66,8 @@ const Header = () => {
   return (
     <header
       className={`fixed top-0 right-0 left-0 z-50 transition-all duration-300 ${
-        isScrolled
-          ? 'bg-white shadow-xl py-3 border-b border-gray-100' // Solid white with shadow and border when scrolled
-          : 'bg-transparent py-4' // Fully transparent initially
+        // Always use the opaque styling, regardless of scroll position
+        'bg-white shadow-xl py-3 border-b border-gray-100'
       }`}
     >
       <nav className="container-custom mx-auto px-4">
