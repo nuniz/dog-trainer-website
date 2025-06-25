@@ -67,14 +67,14 @@ const Header = () => {
     <header
       className={`fixed top-0 right-0 left-0 z-50 transition-all duration-300 ${
         // Always use the opaque styling, regardless of scroll position
-        'bg-white shadow-xl py-3 border-b border-gray-100'
+        'bg-white shadow-xl py-2 border-b border-gray-100' // Changed py-3 to py-2 for less vertical padding
       }`}
     >
       <nav className="container-custom mx-auto px-4">
         <div className="flex items-center justify-between">
 
           {/* Logo and Title */}
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-2"> {/* Changed gap-3 to gap-2 for less spacing */}
             <div className="w-14 h-14 bg-primary rounded-full flex items-center justify-center overflow-hidden shadow-md flex-shrink-0">
               <img
                 src="/dog-trainer-website/images/profile.jpg"
