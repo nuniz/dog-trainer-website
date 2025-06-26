@@ -101,7 +101,7 @@ const About = () => {
                 </li>
                 <li className="flex items-start gap-4">
                   <Bone className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
-                  <span><span className="font-bold text-charcoal">מתחרה פעיל בתחרויות כלבים (BH test, IGP)</span> עם הכלבה פולה.</span>
+                  <span><span className="font-bold text-charcoal">מתחרה פעיל בתחרויות כלבים (BH test, IGP)</span>.</span>
                 </li>
               </ul>
             </div>
